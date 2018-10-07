@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/novcic"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:background="@drawable/glava" />
+
+    <Button
+        android:id="@+id/btnBacaj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Pismo"
+        android:layout_centerHorizontal="true"
+        android:text="Bacaj" />
+
+    <TextView
+        android:id="@+id/Glava"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/novcic"
+        android:text="Glava:"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/Pismo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Glava"
+        android:text="Pismo:"
+        android:textSize="30sp" />
+    <TextView
+        android:id="@+id/GlavaRez"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:layout_below="@id/novcic"
+        android:layout_toRightOf="@id/Glava"
+        android:text=""
+        />
+    <TextView
+        android:id="@+id/PismoRez"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:layout_below="@id/Glava"
+        android:layout_toRightOf="@id/Pismo"
+        android:text=""
+        />
+    <Button
+        android:id="@+id/btnIzlaz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnBacaj"
+        android:layout_marginTop="50dp"
+        android:text="Izlaz" />
+
+
+</RelativeLayout>
